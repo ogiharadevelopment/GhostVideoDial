@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghost Video Dial プレスキット / Press kit</title>
+    <!--
+      The press kit (GitHub Pages: docs/press/). Japanese first, English below.
+      Images and videos come from store-assets/promo (screenshots and the 30 s cut).
+    -->
+    <style>
+      :root {
+        color-scheme: light dark;
+        --text: #1a1a1a;
+        --muted: #555;
+        --border: #ddd;
+        --bg: #fff;
+        --panel: #f4f4f4;
+        --accent: #2563eb;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --text: #eee;
+          --muted: #aaa;
+          --border: #333;
+          --bg: #111;
+          --panel: #1c1c1c;
+          --accent: #7aa7ff;
+        }
+      }
+      body {
+        font-family: "Segoe UI", "Yu Gothic UI", "Meiryo", system-ui, sans-serif;
+        line-height: 1.7;
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 3rem;
+        color: var(--text);
+        background: var(--bg);
+      }
+      a { color: var(--accent); }
+      header { display: flex; align-items: center; gap: 1rem; }
+      header img { width: 72px; height: 72px; border-radius: 16px; }
+      h1 { font-size: 1.6rem; margin: 0; }
+      .sub { color: var(--muted); margin: 0.2rem 0 0; }
+      nav { margin: 1rem 0 0; font-size: 0.95rem; }
+      h2 { font-size: 1.2rem; margin-top: 2.4rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+      h3 { font-size: 1rem; margin-top: 1.4rem; }
+      .lead { font-size: 1.05rem; }
+      .panel { background: var(--panel); border-radius: 10px; padding: 1rem 1.2rem; }
+      table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+      th, td { border: 1px solid var(--border); padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+      th { background: var(--panel); white-space: nowrap; width: 9em; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.8rem; }
+      .grid figure { margin: 0; }
+      .grid img { width: 100%; border-radius: 8px; border: 1px solid var(--border); display: block; }
+      figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; }
+      video, .wide { width: 100%; border-radius: 10px; border: 1px solid var(--border); }
+      .note { font-size: 0.85rem; color: var(--muted); }
+      hr { border: none; border-top: 1px solid var(--border); margin: 3rem 0; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="img/icon128.png" alt="Ghost Video Dial のアイコン" />
+      <div>
+        <h1>Ghost Video Dial プレスキット</h1>
+        <p class="sub">報道・レビュー・ブログでのご紹介用の資料です。画像と動画は自由にお使いいただけます。</p>
+      </div>
+    </header>
+    <nav><a href="#en">English version below</a></nav>
+
+    <h2>概要</h2>
+    <p class="lead">
+      動画の端でマウスホイールを回すだけで、シーク・再生速度・音量の操作や、字幕ごとの移動ができる Chrome 拡張機能です。
+      クリックやドラッグはそのままサイトに届き、ページのスクロール中は反応しません。
+      YouTube・Netflix・Prime Video など7つのサイトに対応し、8言語で公開しています。
+    </p>
+    <p>
+      <a href="https://chromewebstore.google.com/detail/lmngfodipgjkioibfidngohekngkikdf?utm_source=presskit&amp;utm_medium=referral&amp;utm_campaign=press_2_1_0">Chrome ウェブストアのページ</a>
+    </p>
+
+    <h2>2.1.0 の新機能</h2>
+    <ul>
+      <li>
+        <b>字幕ごとの移動</b>：「字幕」スロットを1目盛り回すと、前後の字幕の表示へ移動します。回している間は移動先のセリフが表示されるので、聞き逃したセリフや見たい場面をすぐに探せます（YouTube と Netflix で、字幕機能をオンにしているとき。映像に書き込まれた字幕には使えません）。
+      </li>
+      <li>
+        <b>スロット群2（Pro）</b>：2組目のスロットを用意でき、ゴーストエリアの上で Ctrl キーを短く押すたびに切り替わります。「普段用」と「語学学習用」のように、用途ごとにダイヤルを使い分けられます。
+      </li>
+    </ul>
+    <img class="wide" src="img/ja-subs.gif" alt="字幕ごとに前のセリフへ戻る様子" />
+
+    <h2>動画（30秒）</h2>
+    <video src="video/ghost-video-dial-ja.mp4" controls preload="metadata" poster="img/ja-01.png"></video>
+    <p class="note">ダウンロード：<a href="video/ghost-video-dial-ja.mp4" download>日本語版 MP4</a>／<a href="video/ghost-video-dial-en.mp4" download>English MP4</a>（1920×1080）</p>
+
+    <h2>特長</h2>
+    <ul>
+      <li>動画の上に透明な「ゴーストエリア」を置き、そこでホイールを回すと、シーク・速度・音量などを操作できます。</li>
+      <li>クリックもドラッグもそのままサイトに届くので、再生ボタンやシークバーなど、サイト本来の操作はいつもどおり使えます。</li>
+      <li>ページのスクロール中は反応しません。ポインタを動かしてゴーストエリアに入った時だけダイヤルとして働くので、ホイールでのページ送りが引っかかりません。</li>
+      <li>回している間は、移動先や現在の値が小さく表示されます。</li>
+      <li>多くの対応サイトでは、サイト自身の音量や速度の表示と連動します。</li>
+      <li>視聴履歴や閲覧したページの内容を、開発者や第三者に送信しません。字幕も、移動先の表示にだけ使い、保存も送信もしません。</li>
+    </ul>
+
+    <h2>スクリーンショット（1280×800）</h2>
+    <div class="grid">
+      <figure><img src="img/ja-01.png" alt="ホイールで操作" /><figcaption>ホイールを回すだけ</figcaption></figure>
+      <figure><img src="img/ja-02.png" alt="クリックとドラッグ" /><figcaption>クリックもドラッグもそのまま届く</figcaption></figure>
+      <figure><img src="img/ja-03.png" alt="字幕ごとの移動" /><figcaption>字幕ごとに戻れる</figcaption></figure>
+      <figure><img src="img/ja-04.png" alt="スロット群の切り替え" /><figcaption>Ctrl でスロットを切り替え（Pro）</figcaption></figure>
+      <figure><img src="img/ja-05.png" alt="いろいろなサイト" /><figcaption>7サイト対応</figcaption></figure>
+    </div>
+    <p class="note">GIF：<a href="img/ja-dial.gif">ホイールで操作</a>／<a href="img/ja-subs.gif">字幕ごとの移動</a>。アイコン：<a href="img/icon128.png" download>128×128 PNG</a></p>
+
+    <h2>製品情報</h2>
+    <table>
+      <tr><th>名称</th><td>Ghost Video Dial（旧名 On the Sofa for YouTube）</td></tr>
+      <tr><th>種類</th><td>Google Chrome 拡張機能</td></tr>
+      <tr><th>最新版</th><td>2.1.0（2026年10月18日公開）</td></tr>
+      <tr><th>対応サイト</th><td>YouTube（通常の動画・ショート）、Netflix、Prime Video、ニコニコ動画、TikTok、Instagram、Facebook。そのほかのサイトも、利用者が許可すれば動作します。</td></tr>
+      <tr><th>言語</th><td>日本語、英語、ドイツ語、スペイン語、フランス語、ヒンディー語、韓国語、繁体字中国語</td></tr>
+      <tr><th>料金</th><td>
+        無料：4つのスロット（±1秒・±5秒・速度・音量）。左端のスロットは「字幕」などに変更可能。<br />
+        Pro：1年 600円（自動更新なし。税は決済画面に表示）。スロットを1〜10個に増減、すべての種類と刻み幅を設定可能、スロット群2、サイトごとの設定。1つのキーで5つのブラウザまで。
+      </td></tr>
+      <tr><th>特許</th><td>特許第7757577号（日本）。分割出願（特願2025-133540）審査中。国際特許出願中（PCT/JP2026/007877）。本拡張機能の操作方法に関する特許です。</td></tr>
+      <tr><th>開発者</th><td>荻原 功（茨城県ひたちなか市、個人開発）</td></tr>
+    </table>
+
+    <h2>記者・レビュアーの方へ</h2>
+    <div class="panel">
+      <p>記事やレビューのために Pro の機能をお試しいただけるよう、ライセンスキーを無償でお送りします。下記のメールアドレスまで、媒体名を添えてご連絡ください。取材のご依頼も同じ宛先で承ります。</p>
+      <p>
+        メール：<a href="mailto:ogiharadevelopment@gmail.com">ogiharadevelopment@gmail.com</a><br />
+        X：<a href="https://x.com/OgiDevelopment">@OgiDevelopment</a><br />
+        プライバシーポリシーと販売条件：<a href="../ghost-video-dial-policy.html">ghost-video-dial-policy.html</a>
+      </p>
+    </div>
+    <p class="note">
+      YouTube は Google LLC の商標です。Netflix は Netflix, Inc. の商標です。Prime Video は Amazon.com, Inc. またはその関連会社の商標です。そのほかの会社名・サービス名は各社の商標です。
+      本拡張機能は独立したツールで、対応する動画サービスとは提携・承認・後援の関係にありません。
+    </p>
+
+    <hr />
+
+    <section id="en" lang="en">
+      <h2>Ghost Video Dial — press kit</h2>
+      <p class="lead">
+        A Chrome extension that lets you seek, change the playback speed, set the volume and move subtitle by subtitle,
+        just by turning the mouse wheel on the edge of the video. Clicks and drags still go straight to the site, and it
+        never catches the wheel while you scroll the page. Works on YouTube, Netflix, Prime Video and four more sites,
+        in 8 languages.
+      </p>
+      <p>
+        <a href="https://chromewebstore.google.com/detail/lmngfodipgjkioibfidngohekngkikdf?utm_source=presskit_en&amp;utm_medium=referral&amp;utm_campaign=press_2_1_0">Chrome Web Store page</a>
+      </p>
+
+      <h3>New in 2.1.0</h3>
+      <ul>
+        <li>
+          <b>Move by subtitle:</b> one notch of a Subtitles slot goes to the next or the last subtitle. While you turn, the
+          line you will land on is shown, so a line you missed is one notch away (YouTube and Netflix, with subtitles on; not
+          for subtitles written into the video picture).
+        </li>
+        <li>
+          <b>Slot set 2 (Pro):</b> a second set of slots, switched with a short tap of Ctrl on the ghost area — one dial for
+          everyday watching, another for language study.
+        </li>
+      </ul>
+      <img class="wide" src="img/en-subs.gif" alt="Going back one subtitle with the wheel" />
+
+      <h3>Video (30 s)</h3>
+      <video src="video/ghost-video-dial-en.mp4" controls preload="metadata" poster="img/en-01.png"></video>
+
+      <h3>Highlights</h3>
+      <ul>
+        <li>An invisible “ghost area” sits on the video; turn the wheel there to seek, change the speed or set the volume.</li>
+        <li>Clicks and drags pass straight through, so the site’s own buttons and seek bar work as always.</li>
+        <li>It becomes a dial only when you move the pointer into it, so scrolling the page never gets caught.</li>
+        <li>While you turn, a small label shows where you will land or the new value.</li>
+        <li>Nothing about what you watch is sent to the developer or anyone else; subtitles are used only to show where you are moving to.</li>
+      </ul>
+
+      <h3>Screenshots (1280 × 800)</h3>
+      <div class="grid">
+        <figure><img src="img/en-01.png" alt="Turn the wheel" /><figcaption>Just turn the wheel</figcaption></figure>
+        <figure><img src="img/en-02.png" alt="Clicks and drags" /><figcaption>Clicks and drags go through</figcaption></figure>
+        <figure><img src="img/en-03.png" alt="Move by subtitle" /><figcaption>Back to a line you missed</figcaption></figure>
+        <figure><img src="img/en-04.png" alt="Slot set 2" /><figcaption>Tap Ctrl to switch the slots (Pro)</figcaption></figure>
+        <figure><img src="img/en-05.png" alt="Many players" /><figcaption>Many video sites</figcaption></figure>
+      </div>
+
+      <h3>Facts</h3>
+      <table>
+        <tr><th>Name</th><td>Ghost Video Dial (formerly On the Sofa for YouTube)</td></tr>
+        <tr><th>Platform</th><td>Google Chrome extension</td></tr>
+        <tr><th>Version</th><td>2.1.0 (released October 18, 2026)</td></tr>
+        <tr><th>Sites</th><td>YouTube (videos and Shorts), Netflix, Prime Video, niconico, TikTok, Instagram, Facebook — and any other site the user allows.</td></tr>
+        <tr><th>Price</th><td>Free: four slots (±1 s, ±5 s, speed, volume). Pro: 600 yen per year (no auto-renewal; tax shown at checkout) — 1 to 10 slots, every slot type and step, slot set 2, per-site settings, up to 5 browsers per key.</td></tr>
+        <tr><th>Developer</th><td>Isao Ogihara, an independent developer in Hitachinaka, Ibaraki, Japan</td></tr>
+      </table>
+
+      <h3>For journalists and reviewers</h3>
+      <p>
+        We are happy to send a free Pro license key for your review. Write to
+        <a href="mailto:ogiharadevelopment@gmail.com">ogiharadevelopment@gmail.com</a> with the name of your publication.
+      </p>
+      <p class="note">
+        YouTube is a trademark of Google LLC. Netflix is a trademark of Netflix, Inc. Prime Video is a trademark of
+        Amazon.com, Inc. or its affiliates. Ghost Video Dial is an independent tool and is not affiliated with, endorsed or
+        sponsored by any of the video services it works with.
+      </p>
+    </section>
+  </body>
+</html>
